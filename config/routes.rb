@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :missions
+  resources :planets
+  resources :scientists
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # get "/scientists", to: "scientist#index"
+  # get "/scientists/:id", to: "scientist#show"
+
 end
